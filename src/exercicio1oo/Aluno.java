@@ -1,6 +1,6 @@
 package exercicio1oo;
 
-public class Aluno {
+class Aluno {
     String matricula;
     String nome;
     int idade;
