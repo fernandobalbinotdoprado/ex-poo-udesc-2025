@@ -1,12 +1,13 @@
-package exercicio1oo;
+package exercicio2oo.testes;
+
+import exercicio2oo.classes.Retangulo;
 
 class TestaRetangulo {
     public static void main(String[] args) {
         Retangulo retangulo = new Retangulo();
-        retangulo.largura = 4;
-        retangulo.altura = 3;
-        System.out.println("Largura: " + retangulo.largura);
-        System.out.println("Altura: " + retangulo.altura);
-
+        retangulo.setLargura(4);
+        retangulo.setAltura(3);
+        System.out.println("Largura: " + retangulo.getLargura());
+        System.out.println("Altura: " + retangulo.getAltura());
     }
 }

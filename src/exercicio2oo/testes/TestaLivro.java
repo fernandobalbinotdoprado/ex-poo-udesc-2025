@@ -1,16 +1,18 @@
-package exercicio1oo;
+package exercicio2oo.testes;
 
- class TestaLivro {
+import exercicio2oo.classes.Livro;
+
+class TestaLivro {
     public static void main (String[] args) {
-        Livro livro = new Livro();
-        livro.titulo = "Memórias Postumas de Brás Cubas";
-        livro.autor = "Machado de Assis";
-        livro.genero = "Romance";
-        livro.emprestado = true;
-        System.out.println("Titulo: " + livro.titulo);
-        System.out.println("Autor: " + livro.autor);
-        System.out.println("Genero: " + livro.genero);
-        System.out.println("Emprestado: " + livro.emprestado);
+        Livro livro = new Livro(); /// .
+        livro.setTitulo("Memórias Postumas de Brás Cubas");
+        livro.setAutor("Machado de Assis");
+        livro.setGenero("Romance");
+        livro.setEmprestado(true);
+        System.out.println("Titulo: " + livro.getTitulo());
+        System.out.println("Autor: " + livro.getAutor());
+        System.out.println("Genero: " + livro.getGenero());
+        System.out.println("Emprestado: " + livro.getEmprestado());
     }
 
 }

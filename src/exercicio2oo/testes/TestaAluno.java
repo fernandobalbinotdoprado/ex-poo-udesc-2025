@@ -1,37 +1,37 @@
 package exercicio2oo.testes;
 
-import exercicio1oo.Aluno;
+
+import exercicio2oo.classes.Aluno;
 
 class TestaAluno {
      public static void main(String[] args){
-        Aluno fernando = new Aluno();
-        fernando.nome = "Fernando Balbinot";
-        fernando.idade = 18;
-        fernando.nota1 = 7;
-        fernando.nota2 = 8;
-        fernando.nota3 = 9;
-        fernando.nota4 = 10;
-        System.out.println("Nome: " + fernando.nome);
-        System.out.println("Idade: " + fernando.idade);
-        System.out.println("Nota 1: " + fernando.nota1);
-        System.out.println("Nota 2: " + fernando.nota2);
-        System.out.println("Nota 3: " + fernando.nota3);
-        System.out.println("Nota 4: " + fernando.nota4);
 
+        Aluno fernando = new Aluno();
+        fernando.setNome("Fernando Balbinot");
+        fernando.setIdade(18);
+        fernando.setNota1(7);
+        fernando.setNota2(8);
+        fernando.setNota3(9);
+        fernando.setNota4(10);
+        System.out.println("Nome: " + fernando.getNome());
+        System.out.println("Idade: " + fernando.getIdade());
+        System.out.println("Nota 1: " + fernando.getNota1());
+        System.out.println("Nota 2: " + fernando.getNota2());
+        System.out.println("Nota 3: " + fernando.getNota3());
+        System.out.println("Nota 4: " + fernando.getNota4());
 
         Aluno guilherme = new Aluno();
-        guilherme.nome = "Guilherme Pierdoná";
-        guilherme.idade = 19;
-        guilherme.nota1 = 7;
-        guilherme.nota2 = 8;
-        guilherme.nota3 = 9;
-        guilherme.nota4 = 10;
-        System.out.println("Nome: " + guilherme.nome);
-        System.out.println("Idade: " + guilherme.idade);
-        System.out.println("Nota 1: " + guilherme.nota1);
-        System.out.println("Nota 2: " + guilherme.nota2);
-        System.out.println("Nota 3: " + guilherme.nota3);
-        System.out.println("Nota 4: " + guilherme.nota4);
-
-    }
+        guilherme.setNome("Guilherme Pierdoná");
+        guilherme.setIdade(19);
+        guilherme.setNota1(7);
+        guilherme.setNota2(8);
+        guilherme.setNota3(9);
+        guilherme.setNota4(10);
+        System.out.println("Nome: " + guilherme.getNome());
+        System.out.println("Idade: " + guilherme.getIdade());
+        System.out.println("Nota 1: " + guilherme.getNota1());
+        System.out.println("Nota 2: " + guilherme.getNota2());
+        System.out.println("Nota 3: " + guilherme.getNota3());
+        System.out.println("Nota 4: " + guilherme.getNota4());
+     }
 }

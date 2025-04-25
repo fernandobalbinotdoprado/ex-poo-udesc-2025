@@ -6,7 +6,7 @@ public class ContaBancaria {
     private double saldo;
 
     public String getNumeroConta() {
-        return numeroConta;
+        return this.numeroConta;
     }
 
     public void setNumeroConta(String NumeroConta) {
@@ -14,7 +14,7 @@ public class ContaBancaria {
     }
 
     public String getTitular() {
-        return titular;
+        return this.titular;
     }
 
     public void setTitular(String titular) {
@@ -22,7 +22,7 @@ public class ContaBancaria {
     }
 
     public double getSaldo() {
-        return saldo;
+        return this.saldo;
     }
 
     public void setSaldo(double saldo) {

@@ -8,7 +8,7 @@ public class Livro {
  private boolean emprestado;
 
  public String getTitulo() {
-  return titulo;
+  return this.titulo;
  }
 
  public void setTitulo(String titulo) {
@@ -16,15 +16,15 @@ public class Livro {
  }
 
  public String getAutor() {
-  return autor;
+  return this.autor;
  }
 
- public void setAutor() {
+ public void setAutor(String autor) {
   this.autor = autor;
  }
 
  public String getGenero() {
-  return genero;
+  return this.genero;
  }
 
  public void setGenero(String genero) {
@@ -32,7 +32,7 @@ public class Livro {
  }
 
  public boolean getEmprestado() {
-  return emprestado;
+  return this.emprestado;
  }
 
  public void setEmprestado(boolean emprestado) {

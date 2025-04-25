@@ -1,9 +1,11 @@
-package exercicio1oo;
+package exercicio2oo.testes;
 
- class TestaCirculo {
-    public static void main(String[] args){
+import exercicio2oo.classes.Circulo;
+
+class TestaCirculo {
+    public static void main(String[] args) {
         Circulo circulo = new Circulo();
-        circulo.raio = 5;
-        System.out.println("Raio do Círculo: " + circulo.raio);
+        circulo.setRaio(5);
+        System.out.println("Raio do Círculo: " + circulo.getRaio());
     }
 }

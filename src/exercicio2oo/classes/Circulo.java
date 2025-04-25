@@ -4,7 +4,7 @@ public class Circulo {
     private double raio;
 
     public double getRaio() {
-        return raio;
+        return this.raio;
     }
 
     public void setRaio(double raio) {

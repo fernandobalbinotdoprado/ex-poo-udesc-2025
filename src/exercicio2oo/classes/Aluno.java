@@ -23,7 +23,7 @@ public class Aluno {
     }
 
     public int getNota2() {
-        return this.nota2
+        return this.nota2;
     }
 
     public int getNota3() {
