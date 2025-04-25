@@ -6,7 +6,7 @@ import exercicio2oo.classes.Aluno;
 class TestaAluno {
      public static void main(String[] args){
 
-        Aluno fernando = new Aluno();
+        Aluno fernando = new Aluno(); // .
         fernando.setNome("Fernando Balbinot");
         fernando.setIdade(18);
         fernando.setNota1(7);
