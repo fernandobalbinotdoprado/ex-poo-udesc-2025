@@ -1,9 +1,9 @@
 package exercicio2oo.testes;
 
-import exercicio2oo.classes.Aluno;
+import exercicio1oo.Aluno;
 
 class TestaAluno {
-    public static void main(String[] args){
+     public static void main(String[] args){
         Aluno fernando = new Aluno();
         fernando.nome = "Fernando Balbinot";
         fernando.idade = 18;

@@ -1,7 +1,6 @@
 package exercicio1oo;
-
-class TestaAluno {
-    public static void main(String[] args){
+ class TestaAluno {
+     public static void main(String[] args){
         Aluno fernando = new Aluno();
         fernando.nome = "Fernando Balbinot";
         fernando.idade = 18;
