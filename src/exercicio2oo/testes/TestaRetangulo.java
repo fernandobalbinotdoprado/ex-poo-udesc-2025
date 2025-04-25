@@ -1,7 +1,6 @@
 package exercicio2oo.testes;
-
 import exercicio2oo.classes.Retangulo;
-
+// .
 class TestaRetangulo {
     public static void main(String[] args) {
         Retangulo retangulo = new Retangulo();
