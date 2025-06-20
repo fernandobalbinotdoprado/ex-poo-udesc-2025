@@ -10,12 +10,14 @@ public class Livro {
  public Livro() {
 
  }
+
  public Livro(String titulo, String autor, String genero, boolean emprestado) {
   this.titulo = titulo;
   this.autor = autor;
   this.genero = genero;
   this.emprestado = emprestado;
  }
+
  @Override
  public String toString() {
   return String.format("\nTitulo: %s \nAutor: %s \nGenero: %s \nEmprestado: %b ",
@@ -61,4 +63,30 @@ public class Livro {
   this.emprestado = emprestado;
  }
 
+ public void verificaEmprestimo(Livro livro) {
+  if (livro.getEmprestado()) {
+   System.out.println("O livro está emprestado.");
+  } else {
+   System.out.println("O livro está disponível.");
+  }
+ }
+
+ public void emprestaLivro(Livro livro) {
+  System.out.println("Estado antes de emprestar: " + livro.getEmprestado());
+  if (!livro.getEmprestado()) {
+   livro.setEmprestado(true);
+   System.out.println("Livro emprestado com sucesso.");
+  } else {
+   System.out.println("Ação: O livro já está emprestado.");
+  }
+ }
+
+ public void devolveLivro(Livro livro) {
+  if (livro.getEmprestado()) {
+   livro.setEmprestado(false);
+   System.out.println("Ação: Livro devolvido com sucesso.");
+  } else {
+   System.out.println("Ação: O livro já está disponível.");
+  }
+ }
 }
