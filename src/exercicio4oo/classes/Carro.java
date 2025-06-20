@@ -1,5 +1,5 @@
 package exercicio4oo.classes;
-// .
+
 public class Carro {
   private String modelo;
   private String marca;
@@ -36,5 +36,15 @@ public class Carro {
 
   public void setVelocidade(double velocidade) {
     this.velocidade = velocidade;
+  }
+
+  public void aumentarVelo(Carro carro) {
+    carro.setVelocidade(carro.getVelocidade() + 10);
+  }
+  public void diminuirVelo(Carro carro) {
+    carro.setVelocidade(carro.getVelocidade() - 10);
+  }
+  public void veloAtual(Carro carro) {
+    System.out.println("Velocidade atual: " + carro.getVelocidade() + " km/h");
   }
 }

@@ -1,6 +1,6 @@
 package exercicio4oo.testes;
 import exercicio4oo.classes.Carro;
-// .
+
 class TestaCarro {
     public static void main(String[] args) {
         Carro carro = new Carro();
@@ -14,28 +14,18 @@ class TestaCarro {
         System.out.println("Velocidade: " + carro.getVelocidade());
 
         System.out.println("\nVerificando velocidade...");
-        veloAtual(carro);
+        carro.veloAtual(carro);
 
         System.out.println("\nAcelerando...");
-        aumentarVelo(carro);
+        carro.aumentarVelo(carro);
 
         System.out.println("\nVerificando velocidade...");
-        veloAtual(carro);
+        carro.veloAtual(carro);
 
         System.out.println("\nFreiando...");
-        diminuirVelo(carro);
+        carro.diminuirVelo(carro);
 
         System.out.println("\nVerificando velocidade...");
-        veloAtual(carro);
-    }
-    static void aumentarVelo(Carro carro) {
-        carro.setVelocidade(carro.getVelocidade() + 10);
-    }
-
-    static void diminuirVelo(Carro carro) {
-        carro.setVelocidade(carro.getVelocidade() - 10);
-    }
-    static void veloAtual(Carro carro) {
-        System.out.println("Velocidade atual: " + carro.getVelocidade() + " km/h");
+        carro.veloAtual(carro);
     }
 }
