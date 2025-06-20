@@ -7,6 +7,7 @@ public class Aluno {
     public Aluno() {
 
     }
+
     public Aluno(String nome, int idade, int nota1, int nota2, int nota3, int nota4) {
         this.nome = nome;
         this.idade = idade;
@@ -15,11 +16,13 @@ public class Aluno {
         this.nota3 = nota3;
         this.nota4 = nota4;
     }
+
     @Override
-    public String toString () {
+    public String toString() {
         return String.format("\nNome: %s \nidade: %d \nNota1: %d \nNota2: %d \nNota3: %d \nNota4: %d ",
                 this.nome, this.idade, this.nota1, this.nota2, this.nota3, this.nota4);
     }
+
     public String getNome() {
         return this.nome;
     }
@@ -90,5 +93,15 @@ public class Aluno {
             return;
         }
         this.nota4 = nota4;
+    }
+
+    public void calcularMedia() {
+        int media = (nota1 + nota2 + nota3 + nota4) / 4;
+        System.out.println("Média: " + media);
+        if (media >= 7) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
     }
 }
