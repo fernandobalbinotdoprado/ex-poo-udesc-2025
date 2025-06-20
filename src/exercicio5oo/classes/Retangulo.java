@@ -42,5 +42,8 @@ public class Retangulo {
         }
         this.altura = altura;
     }
-
+    public void calcularArea() {
+        double area = largura * altura;
+        System.out.println("Area: " + area);
+    }
 }
