@@ -58,4 +58,14 @@ return String.format("Modelo: %s \nMarca: %s \nAno: %d \nVelocidade: %.1f \n",
     }
     this.velocidade = velocidade;
   }
+  public void aumentarVelo(Carro carro) {
+    carro.setVelocidade(carro.getVelocidade() + 10);
+  }
+
+  public void diminuirVelo(Carro carro) {
+    carro.setVelocidade(carro.getVelocidade() - 10);
+  }
+  public void veloAtual(Carro carro) {
+    System.out.println("Velocidade atual: " + carro.getVelocidade() + " km/h");
+  }
 }
