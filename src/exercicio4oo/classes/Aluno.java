@@ -61,4 +61,13 @@ public class Aluno {
     public void setNota4(int nota4) {
         this.nota4 = nota4;
     }
+    public void calcularMedia() {
+        int media = (nota1 + nota2 + nota3 + nota4) / 4;
+        System.out.println("Média: " + media);
+        if (media >= 7) {
+            System.out.println("Aprovado");
+        } else {
+            System.out.println("Reprovado");
+        }
+    }
     }
