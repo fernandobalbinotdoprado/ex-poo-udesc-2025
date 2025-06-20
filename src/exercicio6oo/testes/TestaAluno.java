@@ -1,9 +1,8 @@
 package exercicio6oo.testes;
-import exercicio5oo.classes.Aluno;
+import exercicio6oo.classes.Aluno;
 
 class TestaAluno {
      public static void main(String[] args){
-        calcularMedia(7,8,9,10);
         Aluno fernando = new Aluno(); // .
         fernando.setNome("Fernando Balbinot");
         fernando.setIdade(18);
@@ -17,6 +16,7 @@ class TestaAluno {
         System.out.println("Nota 2: " + fernando.getNota2());
         System.out.println("Nota 3: " + fernando.getNota3());
         System.out.println("Nota 4: " + fernando.getNota4());
+        fernando.calcularMedia();
 
         Aluno guilherme = new Aluno();
         guilherme.setNome("Guilherme Pierdoná");
@@ -31,6 +31,7 @@ class TestaAluno {
         System.out.println("Nota 2: " + guilherme.getNota2());
         System.out.println("Nota 3: " + guilherme.getNota3());
         System.out.println("Nota 4: " + guilherme.getNota4());
+        guilherme.calcularMedia();
 
         Aluno aluno1 = new Aluno("Fernando Balbinot",18, 7, 8, 9, 10);
         System.out.println(aluno1);
@@ -38,13 +39,4 @@ class TestaAluno {
         Aluno aluno2 = new Aluno("Guilherme Pierdoná", 19, 7, 8, 9, 10);
         System.out.println(aluno2);
         }
-   static void calcularMedia(int nota1,int nota2,int nota3,int nota4) {
-      int media = (nota1 + nota2 + nota3 + nota4)/4;
-      System.out.println("Média: " + media);
-      if (media >= 7) {
-         System.out.println("Aprovado");
-      } else {
-         System.out.println("Reprovado");
-      }
-   }
    }
