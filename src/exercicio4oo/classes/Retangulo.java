@@ -1,5 +1,5 @@
 package exercicio4oo.classes;
-// .
+
 public class Retangulo {
     double largura;
     double altura;
@@ -18,6 +18,11 @@ public class Retangulo {
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+    public void calcularArea() {
+        double area = largura * altura;
+        System.out.println("Area: " + area);
     }
 
 }
